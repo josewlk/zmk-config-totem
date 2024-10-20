@@ -162,7 +162,7 @@ label= "ADJ"                               ;
 
                 &bt BT_CLR_ALL &bt BT_CLR &out OUT_BLE &out OUT_USB &none         &kp K_MUTE    &kp F7   &kp F8      &kp F9      &kp F12
                 &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &kp K_VOL_UP  &kp F4   &kp F5      &kp F6      &kp F11  
-    &kp SLEEP   &none        &sys_reset   &bootloader  &none        &none         &kp K_VOL_DN  &kp F1   &kp F2      &kp F3      &kp F10     &none         
+    &kp K_SLEEP   &none        &sys_reset   &bootloader  &none        &none         &kp K_VOL_DN  &kp F1   &kp F2      &kp F3      &kp F10     &none         
                                           &trans      &trans      &trans          &trans        &trans   &trans      
                         >;
                 };
