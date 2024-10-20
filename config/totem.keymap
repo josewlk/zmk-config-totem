@@ -75,7 +75,7 @@ label= "ALPHA"                             ;
 
             	&kp ES_Q    &kp ES_W    &kp ES_F      &kp ES_P      &kp ES_B     &kp ES_J    &kp ES_L      &kp ES_U       &kp ES_Y  &kp ES_N_TILDE
                 &kp ES_A    &kp ES_R    &mt LALT ES_S &mt LGHI ES_T &kp ES_G     &kp ES_M    &mt RGUI ES_N &mt RALT ES_E  &kp ES_I  &kp ES_O
-    &acesc      &kp ES_Z    &kp ES_X    &kp ES_C      &kp ES_D      &kp ES_V     &kp ES_K    &kp ES_H      &kp COMMA      &kp DOT   &kp SLASH    &kp FSLH
+    &acesc      &kp ES_Z    &kp ES_X    &kp ES_C      &kp ES_D      &kp ES_V     &kp ES_K    &kp ES_H      &kp COMMA      &kp DOT   &kp FSLH    &kp BSLH
                                         &sk LCTRL     &td0          &kp SPACE    &kp RET     &to SYM       &bspc_del
                         >;
                 };
@@ -101,7 +101,7 @@ label= "SYM"                               ;
 
                 &kp ES_CARET &kp ES_AT     &kp ES_HASH  &kp ES_DLLR  &kp ES_EURO   &kp ES_IQMARK &kp ES_IEXCL &kp ES_EXCL &kp ES_QMARK  &kp ERS_ORDM
                 &kp TAB      &kp ES_TILDE  &kp ES_APOS  &kp ES_DQT   &kp ES_AMPS   &kp ES_LT     &kp ES_LPAR  &kp ES_RPAR &kp ES_GT     &kp ES_MINUS
-    &kp ESC	    &kp INS      &kp ES_UMLAUT &kp ES_GRAVE &none        &kp ES_PRCNT  &kp ES_LBKT   &kp ES_LBRC  &kp ES_RBRC &kp ES_RBKT   &kp SLASH    &kp BACKSLASH
+    &kp ESC	    &kp INS      &kp ES_UMLAUT &kp ES_GRAVE &none        &kp ES_PRCNT  &kp ES_LBKT   &kp ES_LBRC  &kp ES_RBRC &kp ES_RBKT   &kp FSLH    &kp BSLH
                                            &trans       &trans       &trans        &to NUM       &to ALPHA    &to FUN
                         >;
                 };
