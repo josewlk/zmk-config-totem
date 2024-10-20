@@ -76,7 +76,7 @@ label= "ALPHA"                             ;
             	&kp ES_Q    &kp ES_W    &kp ES_F      &kp ES_P      &kp ES_B     &kp ES_J    &kp ES_L      &kp ES_U       &kp ES_Y  &kp ES_N_TILDE
                 &kp ES_A    &kp ES_R    &mt LALT ES_S &mt LGHI ES_T &kp ES_G     &kp ES_M    &mt RGUI ES_N &mt RALT ES_E  &kp ES_I  &kp ES_O
     &acesc      &kp ES_Z    &kp ES_X    &kp ES_C      &kp ES_D      &kp ES_V     &kp ES_K    &kp ES_H      &kp COMMA      &kp DOT   &kp SLASH    &kp FSLH
-                        				&sk LCTRL     &td0          &kp SPACE    &kp RET     &to SYM       &bspc_del
+                                        &sk LCTRL     &td0          &kp SPACE    &kp RET     &to SYM       &bspc_del
                         >;
                 };
 
@@ -99,9 +99,9 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-        		&kp ES_CARET &kp ES_AT     &kp ES_HASH  &kp ES_DLLR  &kp ES_EURO   &kp ES_IQMARK &kp ES_IEXCL &kp ES_EXCL &kp ES_QMARK  &kp ERS_ORDM
-            	&kp TAB      &kp ES_TILDE  &kp ES_APOS  &kp ES_DQT   &kp ES_AMPS   &kp ES_LT     &kp ES_LPAR  &kp ES_RPAR &kp ES_GT     &kp ES_MINUS
-  	&kp ESC		&kp INS      &kp ES_UMLAUT &kp ES_GRAVE &none        &kp ES_PRCNT  &kp ES_LBKT   &kp ES_LBRC  &kp ES_RBRC &kp ES_RBKT   &kp SLASH    &kp BACKSLASH
+                &kp ES_CARET &kp ES_AT     &kp ES_HASH  &kp ES_DLLR  &kp ES_EURO   &kp ES_IQMARK &kp ES_IEXCL &kp ES_EXCL &kp ES_QMARK  &kp ERS_ORDM
+                &kp TAB      &kp ES_TILDE  &kp ES_APOS  &kp ES_DQT   &kp ES_AMPS   &kp ES_LT     &kp ES_LPAR  &kp ES_RPAR &kp ES_GT     &kp ES_MINUS
+    &kp ESC	    &kp INS      &kp ES_UMLAUT &kp ES_GRAVE &none        &kp ES_PRCNT  &kp ES_LBKT   &kp ES_LBRC  &kp ES_RBRC &kp ES_RBKT   &kp SLASH    &kp BACKSLASH
                                            &trans       &trans       &trans        &to NUM       &to ALPHA    &to FUN
                         >;
                 };
@@ -125,10 +125,10 @@ label= "NUM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-    			&none       &kp LEFT    &kp UP        &kp RIGHT  &kp PG_UP       &kp KP_PLUS  &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MULTIPLY
-            	&kp TAB     &none       &mt LALT HOME &sk LGUI   &kp COMMA       &kp KP_MINUS &mt RGUI KP_N4  &mt RALT KP_N5   &kp KP_N6   &kp KP_EQUAL
- 	&kp ESC    	&kp INS     &kp END     &kp DOWN      &kp PG_DN  &kp PG_DN       &kp KP_N0    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DIVIDE    &kp KP_DOT
-                                    	&trans        &mo SYM    &trans          &trans       &to ALPHA   &trans
+                &none       &kp LEFT    &kp UP        &kp RIGHT  &kp PG_UP       &kp KP_PLUS  &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MULTIPLY
+                &kp TAB     &none       &mt LALT HOME &sk LGUI   &kp COMMA       &kp KP_MINUS &mt RGUI KP_N4  &mt RALT KP_N5   &kp KP_N6   &kp KP_EQUAL
+    &kp ESC    	&kp INS     &kp END     &kp DOWN      &kp PG_DN  &kp PG_DN       &kp KP_N0    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_DIVIDE    &kp KP_DOT
+                                        &trans        &mo SYM    &trans          &trans       &to ALPHA   &trans
                         >;
                 };
 
@@ -151,9 +151,9 @@ label= "FUN"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-            	&bt BT_CLR_ALL &bt BT_CLR  &bt SEL 0   &none        &kp K_MUTE     &kp K_MENU   &kp F7      &kp F8      &kp F9      &kp F12
-            	&bt BT_PRV     &bt BT_NXT  &sk LALT    &sk LGUI     &none          &kp K_WWW    &kp F4      &kp F5      &kp F6      &kp F11
-	&kp SLEEP  	&out OUT_TOG   &sys_reset  &bootloader &none        &none          &kp PSCRN    &kp F1      &kp F2      &kp F3      &kp F10     &none
+                &bt BT_CLR_ALL &bt BT_CLR  &bt SEL 0   &none        &kp K_MUTE     &kp K_MENU   &kp F7      &kp F8      &kp F9      &kp F12
+                &bt BT_PRV     &bt BT_NXT  &sk LALT    &sk LGUI     &none          &kp K_WWW    &kp F4      &kp F5      &kp F6      &kp F11
+    &kp SLEEP   &out OUT_TOG   &sys_reset  &bootloader &none        &none          &kp PSCRN    &kp F1      &kp F2      &kp F3      &kp F10     &none
                                            &trans      &kp K_VOL_DN &kp K_VOL_UP   &kp CLEAR    &to ALPHA   &none
                         >;
                 };
