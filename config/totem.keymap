@@ -43,7 +43,7 @@
                 timeout-ms = <50>;
                 key-positions = <0 1>;
                 bindings = <&kp ESC>;
-                layers = <0>;
+                layers = <1 2>;
             };
             combo_nav {
                 timeout-ms = <50>;
@@ -62,25 +62,25 @@
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&sk LSHIFT>, <&kp CAPSLOCK>;
         };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp ES_ACUTE>, <&none>;
         };
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&to FUN>, <&to BASE>;
         };
         td3: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&sk LGUI>, <&sk LALT>;
         };
     };
@@ -96,7 +96,7 @@ label= "BASE"                              ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     Q     ┃     W     ┃     F     ┃     P     ┃     B     ┃   ┃     J     ┃     L     ┃     U     ┃     Y     ┃     Ñ     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     A     ┃     R     ┃     S     ┃     T     ┃     G     ┃   ┃     M     ┃  RGUI  N  ┃  RALT  E  ┃     I     ┃     O     ┃
+//             ┃     A     ┃     R     ┃     S     ┃     T     ┃     G     ┃   ┃     M     ┃     N     ┃     E     ┃     I     ┃     O     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃     '     ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃     ç     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -108,7 +108,7 @@ label= "BASE"                              ;
                 &kp ES_Q    &kp ES_W    &kp ES_F    &kp ES_P    &kp ES_B        &kp ES_J    &kp ES_L    &kp ES_U    &kp ES_Y    &kp ES_N_TILDE
                 &kp ES_A    &kp ES_R    &kp ES_S    &kp ES_T    &kp ES_G        &kp ES_M    &kp ES_N    &kp ES_E    &kp ES_I    &kp ES_O
     &td1        &kp ES_Z    &kp ES_X    &kp ES_C    &kp ES_D    &kp ES_V        &kp ES_K    &kp ES_H    &kp COMMA   &kp DOT     &kp ES_FSLH  &kp ES_C_CEDILLA
-                                        &td3        &td0        &kp SPACE       &lt SYM RET &kp RCTRL   &bspc_del
+                                        &td3        &td0        &kp SPACE       &lt SYM RET &sk RCTRL   &bspc_del
                         >;
                 };
 
@@ -183,9 +183,9 @@ label= "FUN"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &bt BT_CLR_ALL &bt BT_CLR   &out OUT_BLE &out OUT_USB &none         &kp K_MUTE    &kp F7   &kp F8      &kp F9      &kp F12
-                &bt BT_SEL 4   &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &kp K_VOL_UP  &kp F4   &kp F5      &kp F6      &kp F11  
-    &td2        &kp K_SLEEP  &sys_reset   &bootloader  &none   &none         &kp K_VOL_DN  &kp F1   &kp F2      &kp F3      &kp F10     &none         
+                &bt BT_CLR_ALL &bt BT_CLR   &out OUT_BLE &out OUT_USB &none         &kp C_MUTE    &kp F7   &kp F8   &kp F9      &kp F12
+                &bt BT_SEL 4   &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &kp C_VOL_UP  &kp F4   &kp F5   &kp F6      &kp F11  
+    &td2        &kp K_SLEEP  &sys_reset   &bootloader  &none   &none           &kp C_VOL_DN  &kp F1     &kp F2      &kp F3      &kp F10     &none         
                                           &trans      &trans     &trans          &trans        &trans   &trans      
                         >;
                 };
