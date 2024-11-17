@@ -41,9 +41,9 @@
             compatible = "zmk,combos";
             combo_esc {
                 timeout-ms = <50>;
-                key-positions = <0 1>;
+                key-positions = <1 2>;
                 bindings = <&kp ESC>;
-                layers = <1 2>;
+                layers = <0 1>;
             };
             combo_nav {
                 timeout-ms = <50>;
@@ -120,20 +120,20 @@ label= "BASE"                              ;
 label= "NAV"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃    DEL    ┃   HOME    ┃    UP     ┃   PG UP   ┃     %     ┃   ┃     +     ┃     7     ┃     8     ┃     9     ┃     *     ┃
+//             ┃    DEL    ┃   HOME    ┃           ┃   PG UP   ┃     %     ┃   ┃     +     ┃     7     ┃     8     ┃     9     ┃     *     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃    TAB    ┃   LEFT    ┃   DOWN    ┃   RIGHT   ┃     ,     ┃   ┃     -     ┃     4     ┃     5     ┃     6     ┃     =     ┃
+//             ┃    TAB    ┃   LEFT    ┃    UP     ┃   RIGHT   ┃     ,     ┃   ┃     =     ┃     4     ┃     5     ┃     6     ┃     -     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃ FUN  BASE ┃    INS    ┃   END     ┃           ┃   PG DN   ┃           ┃   ┃     0     ┃     1     ┃     2     ┃     3     ┃     /     ┃     .     ┃
+// ┃ FUN  BASE ┃    INS    ┃   END     ┃   DOWN    ┃   PG DN   ┃           ┃   ┃     0     ┃     1     ┃     2     ┃     3     ┃     /     ┃     .     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp DEL     &kp HOME    &kp UP      &kp PG_UP   &kp ES_PRCNT    &kp KP_PLUS  &kp ES_N7   &kp ES_N8   &kp ES_N9   &kp KP_MULTIPLY
-                &kp TAB     &kp LEFT    &kp DOWN    &kp RIGHT   &kp COMMA       &kp KP_MINUS &kp ES_N4   &kp ES_N5   &kp ES_N6   &kp KP_EQUAL
-    &td2        &kp INS     &kp END     &none       &kp PG_DN   &none           &kp ES_N0    &kp ES_N1   &kp ES_N2   &kp ES_N3   &kp KP_DIVIDE &kp ES_DOT
+                &kp DEL     &kp HOME    &none       &kp PG_UP   &kp ES_PRCNT    &kp KP_PLUS  &kp ES_N7   &kp ES_N8   &kp ES_N9   &kp KP_MULTIPLY
+                &kp TAB     &kp LEFT    &kp UP      &kp RIGHT   &kp COMMA       &kp KP_EQUAL &kp ES_N4   &kp ES_N5   &kp ES_N6   &kp KP_MINUS
+    &td2        &kp INS     &kp END     &kp DOWN    &kp PG_DN   &none           &kp ES_N0    &kp ES_N1   &kp ES_N2   &kp ES_N3   &kp KP_DIVIDE &kp ES_DOT
                                         &trans      &trans      &trans          &trans       &trans      &trans      
                         >;
                 };
@@ -159,7 +159,7 @@ label= "SYM"                               ;
 
                 &kp DEL     &kp ES_AT     &kp ES_HASH   &kp ES_DLLR  &kp ES_EURO  &kp ES_IQMARK &kp ES_IEXCL &kp ES_EXCL &kp ES_QMARK &kp ES_ORDM       
                 &kp TAB     &kp ES_TILDE  &kp ES_APOS   &kp ES_DQT   &kp ES_AMPS  &kp ES_LT     &kp ES_LPAR  &kp ES_RPAR &kp ES_GT    &kp ES_MINUS 
-    &kp ESC     &kp INS     &kp ES_UMLAUT &kp ES_GRAVE  &kp ES_CARET &kp ES_PRCNT &kp ES_LBKT   &kp ES_RBRC  &kp ES_RBKT &kp ES_RBKT  &kp ES_FSLH  &kp ES_BSLH         
+    &kp ESC     &kp INS     &kp ES_UMLAUT &kp ES_GRAVE  &kp ES_CARET &kp ES_PRCNT &kp ES_LBKT   &kp ES_LBRC  &kp ES_RBRC &kp ES_RBKT  &kp ES_FSLH  &kp ES_BSLH         
                                           &trans        &trans       &trans       &trans        &trans       &trans      
                         >;
                 };
